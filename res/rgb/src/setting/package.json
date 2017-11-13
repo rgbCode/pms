@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "http-server",
-    "start": "webpack"
+    "start": "http-server",
+    "bld": "webpack",
+    "bldTpl": "webpack --config webpack.config.template.js"
   },
   "author": "",
   "license": "ISC",

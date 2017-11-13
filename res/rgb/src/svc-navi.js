@@ -11,18 +11,18 @@ app.service('navi', x=>{
 			</nav>
 		</div>`);
 		drawer.html(`
-			<span class="mdl-layout-title">PMS</span>
+			<span class="mdl-layout-title"><a href="/pms/biz/index.html">PMS</a></span>
 			<nav class="mdl-navigation">
-				<a class="mdl-navigation__link" href="">상품조회</a>
-				<a class="mdl-navigation__link" href="">상품등록</a>
-				<a class="mdl-navigation__link" href="">주문내역</a>
-				<a class="mdl-navigation__link" href="">주문내역</a>
-			</nav>
+				<a class="mdl-navigation__link" href="/pms/biz/product/search.html">상품조회</a>
+				<a class="mdl-navigation__link" href="">발주내역</a>
+				<a class="mdl-navigation__link" href="">수주내역</a>
+				<a class="mdl-navigation__link" href="">나의상품</a>
+				</nav>
 		`);
 	}
 	function title(vl) {
-		if(!vl) return $('.mdl-layout-title').text()
-		$('.mdl-layout-title').text(vl)
+		if(!vl) return $('.mdl-layout__header-row .mdl-layout-title').text()
+		$('.mdl-layout__header-row .mdl-layout-title').text(vl)
 	}
 	function search(fn) {
 		const srch = $('<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right"/>')

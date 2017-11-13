@@ -5,7 +5,7 @@
 // test
 //--------------------------------------------------
 app.view('index', (nm, vo, pm)=>{
-	app.service('navi').title('PMS22');
+	app.service('navi').title('PMS');
 
 	vo.test = e=>{
 		app.service('http').submit('https://rgb-code.000webhostapp.com/data/biz/list.json').then(rs=>{
